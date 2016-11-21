@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+
 
 @font-face {
     font-family: helveticaBold;
@@ -78,7 +78,7 @@ body {
   display: inline-block;
 }
 
-.gettjlabelblack{  
+.gettjlabelblack{
   color: #000;
   font-size: 25px ;
   font-weight: bold;
@@ -86,7 +86,7 @@ body {
   padding: 15px 0px 15px 25px ;
   display: inline-block;
 }
-.gettjlabelgray{  
+.gettjlabelgray{
   color: #B0B0B0;
   font-size: 25px ;
   font-weight: bold;
@@ -167,11 +167,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-size: cover;
   padding: 20px 0px 150px 0px;
   }
-  
+
 .aboutimg{
   padding: 100px 50px;
 }
-  
+
 .banner{
   background-image: url("../../images/bgblue.jpg");
   background-size: cover;
@@ -198,7 +198,7 @@ background-color:#F8F8F8;
   margin-top: 40px;
 
 }
-.tjt{ 
+.tjt{
   background-image: url("../../images/tjtbg.jpg");
   background-repeat: repeat-y;
 }
