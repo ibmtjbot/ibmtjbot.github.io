@@ -170,12 +170,25 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-position: right;
 }
 
+.jumbo {
+  position: relative;
+  height: 500px;
+}
+
+.jumbo > img {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
 .recipeback{
   background-image: url("../../images/recipebg.jpg");
   background-size: cover;
 }
 
-#about {
+#about, #orders {
   background-color: #F8F8F8;
 }
 
@@ -218,7 +231,7 @@ background-color:#F8F8F8;
   background-repeat: repeat-y;
 }
 .contributerowback{
-  background-color: #F8F8F8;
+
 }
 .buildtjrowback{
   background-color: #FFFFFF;
@@ -514,6 +527,15 @@ a.icon.alt:active:before {
   }
 
   .aboutimg > img {
+    max-width: 200px;
+  }
+
+  .jumbo {
+    text-align: center;
+    height: 300px;
+  }
+
+  .jumbo > img {
     max-width: 200px;
   }
 }
