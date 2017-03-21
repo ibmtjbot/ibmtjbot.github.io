@@ -167,14 +167,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .jumboback{
   background-image: url("../../images/banner.jpg");
   background-size: cover;
-  background-color: #41455C;
   background-position: right;
 }
 
 .recipeback{
   background-image: url("../../images/recipebg.jpg");
-  background-color: #41455C;
   background-size: cover;
+}
+
+#about {
+  background-color: #F8F8F8;
 }
 
 .aboutimg{
@@ -321,7 +323,7 @@ font-size: 17px ;
   border: 0px solid #666 ;
   background-image: url("../../images/order.jpg")   ;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 1;
 }
 .ledbg{
   border: 0px solid #666 ;
@@ -339,7 +341,6 @@ font-size: 17px ;
   background-size: cover;
 }
 .footerback{
-  background-color: #F8F8F8;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
