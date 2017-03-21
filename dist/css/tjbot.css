@@ -137,9 +137,10 @@ body {
 .rowbox{
   height: 300px;
   margin-bottom: 15px;
-  background-color: #fff ;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
+
 .rowtitle{
   color: #fff ;
   margin:15px 0px 15px 0px ;
@@ -179,15 +180,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
   top: 50%;
   left:50%;
+  transform: translate(-50%,-50%);
   width: 100%;
-}
-
-.jumbo > img.right {
-  transform: translate(-30%,-50%);
-}
-
-.jumbo > img.left {
-  transform: translate(-60%,-50%);
 }
 
 .thumbnail h3 {
@@ -199,14 +193,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-size: cover;
 }
 
-
-
 .aboutimg{
   padding-top: 100px;
 }
 
 .aboutimg > img {
-  width:100%;
+  width:80%;
 }
 
 .banner{
@@ -214,7 +206,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-size: cover;
 }
 
-.gettjrowback{
+.gettjrowback, #contribute, #IBMfooter{
 background-color:#F8F8F8;
 }
 
