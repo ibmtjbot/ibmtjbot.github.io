@@ -168,19 +168,21 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: url("../../images/banner.jpg");
   background-size: cover;
   background-color: #41455C;
-  padding: 20px 0px 65px 0px;
-  width:100%;
+  background-position: right;
 }
 
 .recipeback{
   background-image: url("../../images/recipebg.jpg");
   background-color: #41455C;
   background-size: cover;
-  padding: 20px 0px 101px 0px;
-  }
+}
 
 .aboutimg{
   padding-top: 100px;
+}
+
+.aboutimg > img {
+  width:100%;
 }
 
 .banner{
@@ -508,5 +510,9 @@ a.icon.alt:active:before {
   .aboutimg {
     text-align: center;
     padding-top: 80px;
+  }
+
+  .aboutimg > img {
+    max-width: 200px;
   }
 }
