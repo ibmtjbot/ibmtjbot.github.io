@@ -192,9 +192,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-size: cover;
 }
 
-#about, #orders {
-  background-color: #F8F8F8;
-}
+
 
 .aboutimg{
   padding-top: 100px;
@@ -333,6 +331,30 @@ font-size: 17px ;
 .laserbg{
   border: 0px solid #666 ;
   background-image: url("../../images/laser.jpg")   ;
+  background-size: cover;
+  opacity: 1;
+}
+.sparkfunbg{
+  border: 0px solid #666 ;
+  background-image: url("../../images/sparkfun.jpg")   ;
+  background-size: cover;
+  opacity: 1;
+}
+.adafruitbg{
+  border: 0px solid #666 ;
+  background-image: url("../../images/adafruit.jpg")   ;
+  background-size: cover;
+  opacity: 1;
+}
+.texaslaserbg{
+  border: 0px solid #666 ;
+  background-image: url("../../images/texas.jpg")   ;
+  background-size: cover;
+  opacity: 1;
+}
+.robotkingdombg{
+  border: 0px solid #666 ;
+  background-image: url("../../images/kingdom.jpg")   ;
   background-size: cover;
   opacity: 1;
 }
