@@ -18,6 +18,11 @@ body {
   font-family: helveticaLight;
 }
 
+.tjiconsmall{
+  height: 25px;
+  margin: 0px 10px 0px 0px ;
+}
+
 .navbar {
   background-color:#ffffff;
   background-image: none;
@@ -25,10 +30,6 @@ body {
   border: 0;
 }
 
-.tjiconsmall{
-  height: 25px;
-  margin: 0px 10px 0px 0px ;
-}
 .navbar-nav{
 }
 .navbar .navbar-header{
@@ -65,6 +66,17 @@ body {
 .navbar-nav a{
   color: #41455C ;
 }
+
+@media (max-width: 768px) {
+  .navbar-right {
+    margin-right: 0 !important;
+    float: right !important;
+  }
+  .navbar-nav>li {
+    float: left;
+  }
+}
+
 .navbar-toggle .icon-bar {
   background-color: #001A3B;
 
