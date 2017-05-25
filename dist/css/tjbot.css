@@ -67,6 +67,22 @@ body {
   color: #41455C ;
 }
 
+@media (max-width: 390px) {
+  .navbar-right {
+    font-size: 11px;
+  }
+  .navbar ul li a {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-right {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-right {
     margin-right: 0 !important;
