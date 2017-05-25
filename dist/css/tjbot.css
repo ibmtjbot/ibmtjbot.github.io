@@ -218,8 +218,12 @@ body {
   background-size: cover;
 }
 
-.gettjrowback, #contribute, #IBMfooter{
+.gettjrowback, #contribute{
 background-color:#F8F8F8;
+}
+
+#IBMfooter{
+background-color:#525252;
 }
 
 .reciperowback{
