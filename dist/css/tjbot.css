@@ -91,6 +91,14 @@ body {
   .navbar-nav>li {
     float: left;
   }
+
+  .nametj {
+    margin-top: 130px !important;
+  }
+
+  .aboutimg {
+    padding-top: 150px !important;
+  }
 }
 
 .navbar-toggle .icon-bar {

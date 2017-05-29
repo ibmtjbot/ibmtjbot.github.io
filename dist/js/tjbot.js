@@ -5,6 +5,8 @@ $(document).ready(function (){
           $(".active").removeClass( "active" );
           $(this).addClass( "active" );
           event.preventDefault();
+          console.log(target);
+          console.log(this);
           $('html, body').stop().animate({
               scrollTop: target.offset().top
           }, 800);
