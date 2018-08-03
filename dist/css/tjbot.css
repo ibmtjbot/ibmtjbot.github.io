@@ -18,13 +18,8 @@ body {
   font-family: helveticaLight;
 }
 
-.tjiconsmall{
-  height: 25px;
-  margin: 0px 10px 0px 0px ;
-}
-
 .navbar {
-  background-color:#ffffff;
+  background-color:#FFFFFF;
   background-image: none;
   padding: 0 30px;
   border: 0;
@@ -35,8 +30,9 @@ body {
 .navbar .navbar-header{
   min-width: 300px;
 }
+/*navbar underline color*/
 .navbar ul li a.active{
-  border-bottom: 5px solid #001A3B;
+  border-bottom: 5px solid #F59B0A;
   height: 100%;
 }
 .navbar ul li{
@@ -49,25 +45,33 @@ body {
   -moz-transition: background-color 0.7s ease;
   -o-transition: background-color 0.7s ease;
   transition: background-color 0.7s ease;
-  border-bottom: 5px solid #ccc;
+  border-bottom: 5px solid #D3D3D3;
   padding-left: 10px;
   padding-right: 10px;
+  shadow: 10px 10px 5px grey;
 }
+/*navbar colors*/
 .navbar ul li a:hover{
-  background-color: #41455C;
+  background-color: #D3D3D3;
   color: #fff;
-  border-bottom: 5px solid #001A3B;
+  border-bottom: 5px solid #F59B0A;
 }
 
 .navbar ul li.active{
   padding: 0px;
 }
 
+/*navbar text color*/
 .navbar-nav a{
   color: #41455C ;
 }
 
-@media (max-width: 390px) {
+.navbar-toggle .icon-bar {
+  background-color: #98777b;
+
+}
+
+@media screen and (max-width: 390px) {
   .navbar-right {
     font-size: 11px;
   }
@@ -77,13 +81,13 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .navbar-right {
     font-size: 12px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar-right {
     margin-right: 0 !important;
     float: right !important;
@@ -95,24 +99,68 @@ body {
   .nametj {
     margin-top: 130px !important;
   }
+}
 
-  .aboutimg {
-    padding-top: 150px !important;
+@media screen and (max-width: 1024px) {
+
+  .aboutimg > img {
+    max-width: 200px;
+  }
+
+  .jumbo> img {
+    max-width: 400px;
+  }
+  
+  .thumbnail {
+    max-width: 350px;
+  } 
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0 !important;
   }
 }
 
-.navbar-toggle .icon-bar {
-  background-color: #001A3B;
 
+/*fade TJBot image*/
+#fade img {
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
+
+@keyframes fadeFadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#fade img.top {
+animation-name: fadeFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-duration: 3s;
+animation-direction: reverse;
+}
+
+
 .tjheaderbox{
   padding: 8px 0px 0px 0px;
   height: 100%;
 }
-.botheader{
-  height: 30px ;
-  display: inline-block;
-}
+
 .watson{
   font-family: helveticaBold;
 }
@@ -125,25 +173,9 @@ body {
   white-space: nowrap;
 }
 
-.gettjlabelblack{
-  color: #000;
-  font-size: 25px ;
-  font-weight: bold;
-  margin-top: 20px ;
-  padding: 15px 0px 15px 0px ;
-  display: inline-block;
-}
-.gettjlabelgray{
-  color: #B0B0B0;
-  font-size: 25px ;
-  font-weight: bold;
-  margin-top: 20px ;
-  padding: 15px 0px 15px 25px ;
-  display: inline-block;
-}
-
+/*header color*/
 .nametj {
-  color: #41455C;
+  color: #98777b;
   font-size: 35px ;
   font-weight: bold;
   margin-top: 80px ;
@@ -151,16 +183,6 @@ body {
   display: inline-block;
 }
 
-.primaryheader{
-  font-size: 70px;
-}
-.contribhighlight{
-  font-weight: bold ;
-  font-size: 25px;
-  border-bottom: 3px solid #fff;
-  line-height: 50px;
-  padding: 0px 0px 5px 0px ;
-}
 .gettj{
   background: #ffffff;
   color: #41455C;
@@ -170,26 +192,7 @@ body {
   margin-top: 15px;
   margin-bottom: 60px;
 }
-.rowbox{
-  height: 300px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
 
-.rowtitle{
-  color: #fff ;
-  margin:15px 0px 15px 0px ;
-  font-size: 18px ;
-  font-weight: bold;
-  text-align: center;
-}
-.severalways{
-  background-color: #fff;
-  font-size: 18px;
-  display: inline-block;;
-  margin-top: 10px ;
-}
 .opensource {
   font-size: 24px ;
   display: block;
@@ -200,11 +203,6 @@ body {
   font-size: 16px ;
   font-weight: bold;
   color: #41455C;
-}
-.jumboback{
-  background-image: url("../../images/banner.jpg");
-  background-size: cover;
-  background-position: right;
 }
 
 .jumbo {
@@ -218,15 +216,12 @@ body {
   left:50%;
   transform: translate(-50%,-50%);
   width: 100%;
+
 }
 
 .thumbnail h3 {
   min-height: 52px;
-}
 
-.recipeback{
-  background-image: url("../../images/recipebg.jpg");
-  background-size: cover;
 }
 
 .aboutimg{
@@ -237,17 +232,57 @@ body {
   width:80%;
 }
 
-.banner{
-  background-image: url("../../images/bgblue.jpg");
-  background-size: cover;
+/*hiMyNameIsTjbot*/
+#overview{
+  background-color: #FFFFFF;
+}
+/*buildtjbackground*/
+#gettj, #contribute{
+  background-color: #eee;
 }
 
-.gettjrowback, #contribute{
-background-color:#F8F8F8;
+/*bring tjbot to life*/
+#recipes{
+  background-color:  #FFD61E;
+}
+
+/*swiftplayground*/
+#swift{
+  background-color:#fff;
+  background-opacity: ;
+}
+
+/*about TJBot*/
+#about{
+  background-color: #FFFFFF;
+}
+
+/*background color*/
+.gettjrowback{
+
+  background-color:#CEDF21;
+}
+
+
+/*assemble video button*/
+.buildTJ{
+
+  background-color: none;
+  border: none;
+  color: #deb887 ;
+  padding:5px 10px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.buildTJ:hover{
+  color: #fff;
+
 }
 
 #IBMfooter{
-background-color:#525252;
+background-color:#FFFFFF;
 }
 
 .reciperowback{
@@ -258,78 +293,13 @@ background-color:#525252;
   padding: 30px;
   display: block;
 }
-.linkbox{
-  color: white;
-}
-.tjtweet{
-  width: 100%;
-  height: 100%;
-  margin-top: 40px;
 
-}
-.tjt{
-  background-image: url("../../images/tjtbg.jpg");
-  background-repeat: repeat-y;
-}
-.contributerowback{
-
-}
-.buildtjrowback{
-  background-color: #FFFFFF;
-
-}
-
-.videocontainer {
-    position: relative;
-    border: 2px solid #ccc;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.whitetext{
-  color: #fff;
-}
+/*main text color*/
 .darktitle{
-  color: #41455C;
+  color: #606060;
   background: transparent ;
   padding-left: 0px;
   margin-bottom: 10px;
-}
-.whitetitle{
-  color: #fff;
-  background: transparent ;
-  padding-left: 0px;
-  margin-bottom: 10px;
-}
-.conlist {
-  padding: 20px 0px 20px 0px ;
-  margin: 0px 0px 0px 20px ;
-}
-.block{
-  display: block;
-}
-.inlineblock{
-  display: inline-block;
-}
-.darknormal{
-  font-size: 17px ;
-  border: 0px ;
-}
-
-.whitenormal{
-  font-size: 17px ;
-  border: 0px ;
-  color: #fff ;
-}
-.centertext{
-  text-align: center;
 }
 
 .toppadding15{
@@ -337,123 +307,11 @@ background-color:#525252;
   padding-bottom: 15px;
 }
 
-.comptitlebox{
-  border: 3px solid #fff ;
-  padding: 15px ;
-  display: inline-block;
-  color: #001A3B ;
-  background: #fff ;
-font-size: 17px ;
-  margin-right: 10px;
-
-}
-.compbox{
-  border: 3px solid #fff ;
-  padding: 15px ;
-  display: inline-block;
-  color: #fff ;
-  margin: 0px 10px 10px 0px;
-  font-size: 17px ;
-}
-
-.tjbg{
-  background-image: url("../../images/banner.jpg")   ;
-  background-position-x: -175px;
-  background-size: cover;
-}
-.printbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/3dprint.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.laserbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/laser.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.sparkfunbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/sparkfun.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.adafruitbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/adafruit.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.texaslaserbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/texas.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.robotkingdombg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/kingdom.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.manufacturerbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/order.jpg")   ;
-  background-size: cover;
-  opacity: 1;
-}
-.ledbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/led.jpg")   ;
-  background-size: cover;
-}
-.sentimentbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/sentiment.jpg")   ;
-  background-size: cover;
-}
-.conversationbg{
-  border: 0px solid #666 ;
-  background-image: url("../../images/conversation.jpg")   ;
-  background-size: cover;
-}
 .footerback{
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
 }
-.footeribm{
-  color: #fff ;
-  font-weight: bold ;
-  font-size: 20px;
-}
-.footeribmthin{
-  font-weight: normal;
-}
-.tjicon{
-  margin: 0px 0px 0px 10px;
-  height: 75px;
-  opacity: 0.4;
-}
-.footerright{
-  float: right;
-  display: inline-block;
-}
-.smallwhitetext{
-  color: #fff;
-  font-weight: normal;
-  font-size: 10px;
-}
-
-.tjbotemail{
-  font-weight: bold;
-  border-bottom: 3px solid #41455C;
-}
-.border {
-  border: 3px solid #ff0000 ;
-}
-
 
 
 ul li {
@@ -492,59 +350,12 @@ ul.icons li:last-child {
 
 /* lists */
 
-.icon {
-  text-decoration: none;
-  border-bottom: none;
-  position: relative;
-  font-size: 1.6em;
-}
-
-.icon:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-
-}
-
-.icon > .label {
-  display: none;
-}
-
-.icon.alt:before {
-  background-color: #ffffff;
-  border-radius: 100%;
-  color: #242943;
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  text-align: center;
-  width: 2em;
-}
-
-a.icon.alt:before {
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
-}
-
-a.icon.alt:hover:before {
-  background-color: #6fc3df;
-}
-
-a.icon.alt:active:before {
-  background-color: #37a6cb;
-}
-
 /* Animation */
 .animate4s{
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 @keyframes fadein {
   from {
@@ -576,31 +387,5 @@ a.icon.alt:active:before {
   }
   to {
     opacity: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-right {
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutimg {
-    text-align: center;
-    padding-top: 80px;
-  }
-
-  .aboutimg > img {
-    max-width: 200px;
-  }
-
-  .jumbo {
-    text-align: center;
-    height: 300px;
-  }
-
-  .jumbo > img {
-    max-width: 200px;
   }
 }

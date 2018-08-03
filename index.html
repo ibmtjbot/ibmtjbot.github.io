@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="IBM Watson Maker Kits are a collection of DIY open source templates to connect to Watson services in a fun way. TJBot is the first maker kit in the collection and was created by Maryam Ashoori at IBM Research as an experiment to find the best practices in the design and implementation of cognitive objects. TJBot is affectionately named after Thomas J. Watson, the first Chairman and CEO of IBM.">
-    <meta name="author" content="IBM Research">
-    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Maryam Ashoori">
 
-    <title>Watson Maker Kits</title>
+    <title>IBM TJBot</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="dist/libs/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
@@ -23,9 +22,12 @@
       <script src="dist/libs/html5shiv.min.js"></script>
       <script src="dist/libs/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body>
-    <div class="container-fluid">
+
+    
+     <div class="container-fluid">
       <nav class="navbar navbar-reversed navbar-fixed-top bar">
         <div class="navbar-header ">
           <div class="tjheaderbox" href="#">
@@ -35,8 +37,8 @@
         <div id="navbar" class="navbar-collapse">
           <ul class=" nav navbar-nav navbar-right">
             <li><a href="#gettj" id="gettjlink" class="active">Build TJBot</a></li>
-            <li><a href="#recipes">Bring TJBot  to Life</a></li>
-            <li><a href="#contribute">Contribute to TJBot</a></li>
+            <li><a href="https://github.com/ibmtjbot/tjbot" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/jweisz/tjbot-playground">Playground</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </nav>
@@ -45,7 +47,7 @@
     <div class="img-fluid animate4s" id="overview">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-md-6">
             <p class="nametj darktitle">
               Hi, my name is TJBot!
             </p>
@@ -57,9 +59,10 @@
               I can't wait to see what we do together! #TJBot
             </p>
           </div>
-          <div class="col-sm-5 jumbo">
-            <img src="images/tjbot.jpg" class="right">
-          </div>
+          <div class="col-md-4 jumbo col-sm-offset-2" id="fade">
+              <img class="bottom" src="images/tjline2.png">
+              <img class="top" src="images/laserTJ.png">
+        </div>
         </div>
       </div>
     </div>
@@ -67,142 +70,148 @@
     <div class="gettjrowback" id="gettj">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <h1 class="nametj darktitle">Build TJBot</h1>
             <p class="darktitle opensource toppadding15">
-              You can download the design files and laser cut or 3D print TJBot. Here is <a href="http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/" target="_blank">an instructable</a> to help you with the details of how to build your TJBot.
+              You can download the design files and laser cut or 3D print yours, or purchase TJBot from one of his supplier friends.
             </p>
           </div>
         </div>
-        
         <div class="row toppadding15">
           <div class="col-md-3">
             <div class="thumbnail">
-              <img alt="JTBot" src="images/3dprint.jpg">
+              <img  src="images/texas.jpg">
               <div class="caption">
-                <h3>3D Print TJBot</h3>
+                <h3>Laser cut</h3>
                 <p>
-                  <a href="images/TJBot3DPrintFiles.zip" target="_blank" class="btn btn-default" role="button">Download <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                  <a href="images/TJBotLasercutLines.zip" target="_blank" class="btn btn-default" role="button">Design files <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p><p>
+                  <a href="http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/" target="_blank" class="btn btn-default" role="button">Instructions <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
                </p>
               </div>
             </div>
           </div>
-
           <div class="col-md-3">
             <div class="thumbnail">
-              <img alt="JTBot" src="images/laser.jpg">
+              <img src="images/3dprint.png">
               <div class="caption">
-                <h3>Laser cut TJBot</h3>
-                <p>
-                  <a href="images/TJBotLasercutLines.zip" target="_blank" class="btn btn-default" role="button">Download <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                <h3>3D Print</h3>
+                <p><a href="images/TJBot3DPrintFiles.zip" target="_blank" class="btn btn-default" role="button">Design files <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a></p>
+                <p><a href="https://www.instructables.com/id/Build-a-3D-Printed-TJBot/" target="_blank" class="btn btn-default" role="button">Instructions <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="images/adafruit.jpg">
+              <div class="caption">
+                <h3>Purchase</h3>
+                <p><a href="https://www.sparkfun.com/tjbot" target="_blank" class="btn btn-default" role="button">Sparkfun <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                <a href="https://www.adafruit.com/product/3462" target="_blank" class="btn btn-default" role="button">Adafruit <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p>
+                <p><a href="http://texlaser.com" target="_blank" class="btn btn-default" role="button">Texas Laser Creations <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        
-        <p class="darktitle opensource toppadding15">TJBot is also available for online purchase. </p>
-        
-          <div class="row toppadding15">
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <img alt="JTBot" src="images/sparkfun.jpg">
-              <div class="caption">
-                <h3>SparkFun</h3>
-                <p>Kit</p>
-                <p>
-                  <a href="https://www.sparkfun.com/tjbot" target="_blank" class="btn btn-default" role="button">Buy <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
-                  <a href="https://www.amazon.com/SparkFun-Raspberry-Pi-3-Watson/dp/B06XRMJRXB/ref=sr_1_1?ie=UTF8&qid=1491021505&sr=8-1&keywords=tjbot" target="_blank" class="btn btn-default" role="button">Amazon <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <img alt="JTBot" src="images/adafruit.jpg">
-              <div class="caption">
-                <h3>Adafruit</h3>
-                <p>Kit</p>
-                <p>
-                  <a href="https://www.adafruit.com/product/3462" target="_blank" class="btn btn-default" role="button">Buy <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <img alt="JTBot" src="images/texas.jpg">
-              <div class="caption">
-                <h3>Texas Laser Creations</h3>
-                <p>Cardboard</p>
-                <p>
-                  <a href="http://texlaser.com" target="_blank" class="btn btn-default" role="button">Buy <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
-                  <a href="https://www.amazon.com/TjBot-Laser-Cut-Cardboard/dp/B072F2YN75/ref=sr_1_2?ie=UTF8&qid=1494475578&sr=8-2&keywords=TJBot" target="_blank" class="btn btn-default" role="button">Amazon <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a> 
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-        
         <div class="tjrow"></div>
       </div>
     </div>
-    
-    <div class="img-fluid" id="recipes">
-      <div class="container">
+
+    <div class="container" id="assembly">
+        <div class="row">
+            <div class="col-md-4 jumbo">
+                <img src="images/assembly.png">
+            </div>
+            <div class="col-md-2"></div>
+             <div class="col-md-6">
+                <p class="darktitle opensource toppadding15">There are a number of components you can add to TJBot to bring him to life. <br>Not all of these are required for all recipes. </p>
+             <table class="table">
+                <tbody>
+                 <tr><td> <a href="https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_3?ie=UTF8&qid=1532531299&sr=8-3&keywords=raspberry+pi+model+3" target"_blank">Raspberry Pi 3</a> + <a href="https://www.amazon.com/Raspberry-Preloaded-NOOBS-Pre-installed-Class/dp/B07169XCD4/ref=sr_1_1?s=electronics&ie=UTF8&qid=1532531371&sr=1-1&keywords=16gb+noobs+card" target"_blank">SD card preloaded with NOOBS.</a> <br>This is a required component to make TJBot work! 🤖 </td></tr>
+                 <tr><td> <a href="https://www.amazon.com/gp/product/B00IR8R7WQ/" target"_blank">USB Microphone.</a><br>Other brands of USB microphones should also work.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/gp/product/B00OEPCHL2/" target"_blank">Mini Bluetooth Speaker.</a><br>Any small speaker with either a 3.5mm audio jack or Bluetooth will work. Note that if you are using the 3.5mm audio jack, you may wish to add a USB Audio Adapter to avoid audio interference with the LED.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/RioRand-micro-Helicopter-Airplane-Controls/dp/B00JJZXRR0/" target"_blank">Servo Motor.</a><br>Note that the red (middle) wire is 5v, the brown wire is ground, and the orange wire is data.</td></tr>
+                 <tr><td> <a href="https://www.adafruit.com/product/1734" target"_blank">NeoPixel RGB LED (8mm).</a><br>If you are using other kinds of LEDs, you may need to add a resistor; this LED doesn’t require one.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/dp/B00KOL5BCC/" target"_blank">Female-to-female</a> + <a href="https://www.amazon.com/dp/B00PBZMN7C/"> female-to-male jumper wires.</a><br>TJBot will only need 3 of each type, so you’ll have extra.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/dp/B01ER2SKFS/" target"_blank">Raspberry Pi Camera.</a> Either the 5MP or 8MP camera will work.</td></tr>
+                </tbody>
+            </table>
+            </div>
+     </div>
+   </div>
+
+    <div class="reciperowback" id="recipes">
+        <div class="container">
         <div class="row" >
-          <div class="col-md-12">
+          <div class="col-md-6">
             <p class="nametj darktitle">
                 Bring TJBot to life!
             </p>
             <p class="darktitle opensource toppadding15">
-              <a href="https://github.com/ibmtjbot/tjbot/tree/master/recipes" target="_blank">Recipes</a> are step by step instructions to help you connect your TJBot to Watson services.
+              <a href="https://github.com/ibmtjbot/tjbot/tree/master/recipes" target="_blank">Recipes</a> are step by step instructions to help you connect your TJBot to Watson services, such as <a href="https://www.ibm.com/watson/services/speech-to-text/" target="_blank">Speech to Text,</a><a href="https://www.ibm.com/watson/services/visual-recognition/" target="_blank"> Visual Recognition,</a><a href="https://www.ibm.com/watson/services/language-translator/" target="_blank"> and Language Translator</a>.
               The recipes are designed based on a Raspberry Pi.
               You can either run one of the available recipes or create your own.
             </p>
-            <p class=" darktitle opensource toppadding15">
+            <p class="darktitle opensource toppadding15">
                 View recipes on  <a href="https://github.com/ibmtjbot/tjbot" target="_blank" >github</a> and <a href="https://www.instructables.com/member/TJBot/" target="_blank">Instructables.</a>
             </p>
           </div>
-        </div>
+          <div class="col-md-6 jumbo">
+              <img src="images/TJPink.png">
+                </div>
+      </div>
+      <div class="tjrow"></div></div>
+   </div>
+
+    <div class="contributerowback" id="swift">
+      <div class="container">
+        <div class="tjrow"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="nametj darktitle">
+              Join Tinker in the Swift Playground
+            </p>
+            <p class="darktitle opensource toppadding15">
+              Help Tinker, the virtual TJBot, in his quest to become a real robot.  <a href="https://www.ibm.com/blogs/research/2017/12/tjbot-goes-digital/" target"_blank">Pick up an iPad and try TJBot Playground!</a>
+            </p>
+          </div>
+          <div class="col-md-6 jumbo">
+              <img src="images/swiftplayground.png">
+          </div>
+        </div>        
         <div class="tjrow"></div>
       </div>
     </div>
 
     <div class="contributerowback" id="contribute">
-      <div class="container">
+     <div class="container">
         <div class="row" >
-              <div class="col-sm-3 aboutimg">
-            <img src="images/newTJBoticon.png" >
+          <div class="col-md-3 aboutimg">
+            <img src="images/tjbotLINES.png" >
           </div>
-          <div class="col-sm-8 col-sm-offset-1">
+          <div class="col-md-9">
             <h1 class="nametj darktitle">Contribute to TJBot</h1>
-            <p class=" darktitle opensource toppadding15">
-              TJBot is open source and we'd love to see what you can make with it. If you have created your own recipe, we would love to include it as a <a href="https://github.com/ibmtjbot/tjbot/tree/master/featured" target="_blank">featured recipe!</a>
-            </p>
-            <p class=" darktitle opensource toppadding15">
-              We cannot wait to see what you build with TJBot!
-            </p>
+                <p class=" darktitle opensource toppadding15">
+                      TJBot is open source and we'd love to see what you can make with it. If you have created your own recipe, we would love to include it as a <a href="https://github.com/ibmtjbot/tjbot/tree/master/featured" target="_blank">featured recipe!</a>
+                </p>
+                <p class=" darktitle opensource toppadding15">
+                      We cannot wait to see what you build with TJBot!
+                </p>
           </div>
         </div>
         <div class="tjrow"></div>
       </div>
     </div>
 
-    
     <div id="about">
       <div class="container">
+        <div class="tjrow"></div>
         <div class="row" >
           <div class="col-md-12">
-            <p class="nametj darktitle">
-              About TJBot
-            </p>
             <p class=" darktitle opensource toppadding15">
-             IBM Watson Maker Kits are a collection of DIY open source templates to connect to Watson services in a fun way. 
+             IBM Watson Maker Kits are a collection of DIY open source templates to connect to Watson services in a fun way.
              TJBot is the first maker kit in the collection and was created by <a href="https://github.com/maryamashoori">Maryam Ashoori</a> at <a href=" http://www.research.ibm.com">IBM Research</a> as an experiment to find the best practices in the design and implementation of cognitive objects. TJBot was born on November 9, 2016 via <a href="https://www.ibm.com/blogs/research/2016/11/calling-makers-meet-tj-bot/">this blog post</a>. He was affectionately named after Thomas J. Watson, the first Chairman and CEO of IBM.
             </p>
             <p class=" darktitle opensource toppadding15">
@@ -213,29 +222,22 @@
         <div class="tjrow"></div>
       </div>
     </div>
-    
-    <div id="IBMfooter">
-        <footer class="footerback">
 
-    </footer>
+    <div id="IBMfooter">
+        <footer class="footerback">    </footer>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="dist/libs/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
-    </script>
-    <script src="dist/libs/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="dist/js/tjbot.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
 
-      ga('create', 'UA-86800349-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+      } else {
+          document.getElementById("navbar").style.top = "-50px";
+      }
+  }
+  </script>
   </body>
 </html>
