@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IBM Watson Maker Kits are a collection of DIY open source templates to connect to Watson services in a fun way. TJBot is the first maker kit in the collection and was created by Maryam Ashoori at IBM Research as an experiment to find the best practices in the design and implementation of cognitive objects. TJBot is affectionately named after Thomas J. Watson, the first Chairman and CEO of IBM.">
+    <meta name="author" content="Maryam Ashoori">
+
+    <title>IBM TJBot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/tjbot.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="dist/libs/html5shiv.min.js"></script>
+      <script src="dist/libs/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    
+     <div class="container-fluid">
+      <nav class="navbar navbar-reversed navbar-fixed-top bar">
+        <div class="navbar-header ">
+          <div class="tjheaderbox" href="#">
+            <span class="tjheader"> IBM <span class="watson">Watson</span> Maker Kits </span> <span class="byibm"></span>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse">
+          <ul class=" nav navbar-nav navbar-right">
+            <li><a href="#gettj" id="gettjlink" class="active">TJBotを作る</a></li>
+            <li><a href="https://github.com/ibmtjbot/tjbot" target="_blank">開発例</a></li>
+            <li><a href="https://github.com/jweisz/tjbot-playground">Playground</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </nav>
+    </div>
+
+    <div class="img-fluid animate4s" id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="nametj darktitle">
+              こんにちは、僕の名前はTJBotです！
+            </p>
+            <p class="darktitle opensource toppadding15">
+              僕は、皆さんが楽しく<a href="https://www.ibm.com/watson/products-services/" target="_blank">Watsonサービス</a>を使えるよう設計された<a href="https://github.com/ibmtjbot/tjbot" target="_blank">オープンソースプロジェクト</a>です。
+              あなたはレーザーカットをした後、開発例を1つを使い、僕に命を吹き込むことができます！
+            </p>
+            <p class="darktitle opensource toppadding15">
+              僕と一緒に開発したものを見るのが待ち遠しいです！ #TJBot
+            </p>
+          </div>
+          <div class="col-md-4 jumbo col-sm-offset-2" id="fade">
+              <img class="bottom" src="images/tjline2.png">
+              <img class="top" src="images/laserTJ.png">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gettjrowback" id="gettj">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="nametj darktitle">TJBotを作る</h1>
+            <p class="darktitle opensource toppadding15">
+              あなたはザインファイルをダウンロードして、レーザーカットしたり、3Dプリントしたりできます。または、TJBotの供給業者の1つから購入することもできます。
+            </p>
+          </div>
+        </div>
+        <div class="row toppadding15">
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img  src="images/texas.jpg">
+              <div class="caption">
+                <h3>レーザーカット</h3>
+                <p>
+                  <a href="images/TJBotLasercutLines.zip" target="_blank" class="btn btn-default" role="button">デザインファイル <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p><p>
+                  <a href="http://www.instructables.com/id/Build-TJ-Bot-Out-of-Cardboard/" target="_blank" class="btn btn-default" role="button">説明 <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+               </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="images/3dprint.png">
+              <div class="caption">
+                <h3>3Dプリント</h3>
+                <p><a href="images/TJBot3DPrintFiles.zip" target="_blank" class="btn btn-default" role="button">デザインファイル <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a></p>
+                <p><a href="https://www.instructables.com/id/Build-a-3D-Printed-TJBot/" target="_blank" class="btn btn-default" role="button">説明 <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="images/adafruit.jpg">
+              <div class="caption">
+                <h3>購入</h3>
+                <p><a href="https://www.sparkfun.com/tjbot" target="_blank" class="btn btn-default" role="button">Sparkfun <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                <a href="https://www.adafruit.com/product/3462" target="_blank" class="btn btn-default" role="button">Adafruit <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p>
+                <p><a href="http://texlaser.com" target="_blank" class="btn btn-default" role="button">Texas Laser Creations <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img  src="images/tjbotzero.jpg">
+              <div class="caption">
+                <h3>レーザーカット(Raspberry Pi Zero向け)</h3>
+                <p>
+                  <a href="https://public.dhe.ibm.com/software/dw/jp/2018/tjbot-zero/tjbot_zero_l_pdf_91118102.pdf" target="_blank" class="btn btn-default" role="button">デザインファイル <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+                </p><p>
+                  <a href="https://public.dhe.ibm.com/software/dw/jp/2018/tjbot-zero/tjbot-zero-setup-guide.pdf" target="_blank" class="btn btn-default" role="button">説明 <span class="glyphicon glyphicon-share" aria-hidden="true"></span></a>
+               </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tjrow"></div>
+      </div>
+    </div>
+
+    <div class="container" id="assembly">
+        <div class="row">
+            <div class="col-md-4 jumbo">
+                <img src="images/assembly.png">
+            </div>
+            <div class="col-md-2"></div>
+             <div class="col-md-6">
+                <p class="darktitle opensource toppadding15">彼に命を吹き込むために、あなたが追加できる部品が沢山あります。<br>これら全てが全ての開発例で必要というわけではありません。</p>
+             <table class="table">
+                <tbody>
+                 <tr><td> <a href="https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_3?ie=UTF8&qid=1532531299&sr=8-3&keywords=raspberry+pi+model+3" target"_blank">Raspberry Pi 3</a> + <a href="https://www.amazon.com/Raspberry-Preloaded-NOOBS-Pre-installed-Class/dp/B07169XCD4/ref=sr_1_1?s=electronics&ie=UTF8&qid=1532531371&sr=1-1&keywords=16gb+noobs+card" target"_blank">SD card preloaded with NOOBS.</a> <br>This is a required component to make TJBot work! 🤖 </td></tr>
+                 <tr><td> <a href="https://www.amazon.com/gp/product/B00IR8R7WQ/" target"_blank">USB Microphone.</a><br>Other brands of USB microphones should also work.</td></tr>
+                 <tr><td> <a href="" target"_blank">Mini Bluetooth Speaker.</a><br>Any small speaker with either a 3.5mm audio jack or Bluetooth will work. Note that if you are using the 3.5mm audio jack, you may wish to add a USB Audio Adapter to avoid audio interference with the LED.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/RioRand-micro-Helicopter-Airplane-Controls/dp/B00JJZXRR0/" target"_blank">Servo Motor.</a><br>Note that the red (middle) wire is 5v, the brown wire is ground, and the orange wire is data.</td></tr>
+                 <tr><td> <a href="https://www.adafruit.com/product/1734" target"_blank">NeoPixel RGB LED (8mm).</a><br>If you are using other kinds of LEDs, you may need to add a resistor; this LED doesn’t require one.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/dp/B00KOL5BCC/" target"_blank">Female-to-female</a> + <a href="https://www.amazon.com/dp/B00PBZMN7C/"> female-to-male jumper wires.</a><br>TJBot will only need 3 of each type, so you’ll have extra.</td></tr>
+                 <tr><td> <a href="https://www.amazon.com/dp/B01ER2SKFS/" target"_blank">Raspberry Pi Camera.</a> Either the 5MP or 8MP camera will work.</td></tr>
+                </tbody>
+            </table>
+            </div>
+     </div>
+   </div>
+
+    <div class="reciperowback" id="recipes">
+        <div class="container">
+        <div class="row" >
+          <div class="col-md-6">
+            <p class="nametj darktitle">
+                TJBotに命を吹き込む！
+            </p>
+            <p class="darktitle opensource toppadding15">
+              <a href="https://github.com/ibmtjbot/tjbot/tree/master/recipes" target="_blank">開発例</a>はTJBotを<a href="https://www.ibm.com/watson/services/speech-to-text/" target="_blank">Speech to Text</a>、<a href="https://www.ibm.com/watson/services/visual-recognition/" target="_blank">Visual Recognition</a>、<a href="https://www.ibm.com/watson/services/language-translator/" target="_blank">Language Translator</a>のようなWatsonサービスとつなぐのに役立つステップバイステップの解説です。
+              開発例は、Raspberry Pi用に設計されています。
+              あなたは、利用可能な開発例の1つを動かすか、自分で開発することができます。
+            </p>
+            <p class="darktitle opensource toppadding15">
+                ぜひ、<a href="https://github.com/ibmtjbot/tjbot" target="_blank" >github</a>や<a href="https://www.instructables.com/member/TJBot/" target="_blank">Instructables</a>で開発例を見てみてください。
+            </p>
+          </div>
+          <div class="col-md-6 jumbo">
+              <img src="images/TJPink.png">
+                </div>
+      </div>
+      <div class="tjrow"></div></div>
+   </div>
+
+    <div class="contributerowback" id="swift">
+      <div class="container">
+        <div class="tjrow"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="nametj darktitle">
+              Swift PlaygroundのTinkerに参加する
+            </p>
+            <p class="darktitle opensource toppadding15">
+              架空のTJBotのTinkerが本物のロボットになるための冒険の旅を助けてあげてください。<a href="https://www.ibm.com/blogs/research/2017/12/tjbot-goes-digital/" target"_blank">iPadを手に取り、TJBot Playgroundを試してみてください！</a>
+            </p>
+          </div>
+          <div class="col-md-6 jumbo">
+              <img src="images/swiftplayground.png">
+          </div>
+        </div>        
+        <div class="tjrow"></div>
+      </div>
+    </div>
+
+    <div class="contributerowback" id="contribute">
+     <div class="container">
+        <div class="row" >
+          <div class="col-md-3 aboutimg">
+            <img src="images/tjbotLINES.png" >
+          </div>
+          <div class="col-md-9">
+            <h1 class="nametj darktitle">TJBotに貢献する</h1>
+                <p class=" darktitle opensource toppadding15">
+                      TJBotはオープンソースであり、私たちはあなたが作ったものを見てみたいです。もしあなたが自身の開発例を作成した場合、私たちはそれを<a href="https://github.com/ibmtjbot/tjbot/tree/master/featured" target="_blank">注目のレシピ</a>として掲載できます！
+                </p>
+                <p class=" darktitle opensource toppadding15">
+                      あなたがTJBotで開発したものを見るのが待ち切れません！
+                </p>
+          </div>
+        </div>
+        <div class="tjrow"></div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="tjrow"></div>
+        <div class="row" >
+          <div class="col-md-12">
+            <p class=" darktitle opensource toppadding15">
+             IBM Watson Maker Kitsは、楽しくWatsonサービスに接続するためのDIYオープンソーステンプレート集です。
+             TJBotは、コレクション内の最初のメーカーキットであり、コグニティブオブジェクトの設計と実装におけるベストプラクティスを見つけるための実験として、<a href=" http://www.research.ibm.com">IBM Research</a>の<a href="https://github.com/maryamashoori">Maryam Ashoori</a>によって作成されました。 TJBotは、<a href="https://www.ibm.com/blogs/research/2016/11/calling-makers-meet-tj-bot/">このブログ投稿</a>を介して2016年11月9日に生まれました。彼の名前は、親しみを込めてIBMの最初の会長兼CEOであるThomas J. Watsonにちなんで名付けられました。
+            </p>
+            <p class=" darktitle opensource toppadding15">
+              技術的な問題がある場合は、<a href="https://github.com/ibmtjbot/tjbot/issues">Github issue</a>を作ってください。
+            </p>
+            <p class=" darktitle opensource toppadding15">
+              <a href="index.html">英語</a> <a href="japanese.html">日本語</a> 
+            </p>
+          </div>
+        </div>
+        <div class="tjrow"></div>
+      </div>
+    </div>
+
+    <div id="IBMfooter">
+        <footer class="footerback">    </footer>
+    </div>
+
+    <script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+      } else {
+          document.getElementById("navbar").style.top = "-50px";
+      }
+  }
+  </script>
+  </body>
+</html>
